@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mooc on Ben H</title>
+    <title>mooc on Ben Hammack</title>
     <link>https://ben.hammack.dev/tags/mooc/</link>
-    <description>Recent content in mooc on Ben H</description>
+    <description>Recent content in mooc on Ben Hammack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ben.hammack.dev/tags/mooc/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ben.hammack.dev/posts/reflections-on-omscs/</guid>
-      <description>Why get a Masters at OMSCS?  OMSCS is really affordable. I wanted a Masters of computer science. OMSCS is online.  Courses Below are the eight courses I took as part of the OMSCS program. Due to completing prior graduate level coursework at another university, I was able to transfer over six credits worth of work towards my degree.
+      <description>Why Masters?  I wanted it In computer science That was also affordable  Courses Below are the eight courses I took as part of the OMSCS program. Due to completing prior graduate level coursework at another university, I was able to transfer over six credits worth of work towards my degree.
 CS6035 Intro to Information Security ★★★☆☆
  Intro to Info Sec (IIS) is recommended as the best &amp;ldquo;starter&amp;rdquo; course in the OMSCS program in order to prepare new applicants for the level of rigour required to succeed in the program.</description>
     </item>

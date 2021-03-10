@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>https://ben.hammack.dev/posts/hello-world/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ben.hammack.dev/posts/dlink-dhcs-8525lh/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
@@ -103,78 +108,7 @@
   </url>
   
   <url>
-    <loc>https://ben.hammack.dev/posts/pan-ribeye-steak/</loc>
-    <lastmod>2020-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/categories/recipes/</loc>
-    <lastmod>2020-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/posts/banana-bread/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/posts/oven-baked-chicken/</loc>
-    <lastmod>2020-03-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/posts/breakfast-smoothie/</loc>
-    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/posts/pasta-fagoli-soup/</loc>
-    <lastmod>2020-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/posts/baked-spaghetti/</loc>
-    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/posts/parmesan-crusted-chicken/</loc>
-    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/posts/my-first-post/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/tags/css/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/tags/html/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/tags/hugo/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/tags/theme/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ben.hammack.dev/portfolio/dera/</loc>
-    <lastmod>2018-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ben.hammack.dev/portfolio/</loc>
-    <lastmod>2018-06-21T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ben H</title>
+    <title>Tags on Ben Hammack</title>
     <link>https://ben.hammack.dev/tags/</link>
-    <description>Recent content in Tags on Ben H</description>
+    <description>Recent content in Tags on Ben Hammack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ben.hammack.dev/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -94,42 +94,6 @@
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ben.hammack.dev/tags/rtsp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>https://ben.hammack.dev/tags/css/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://ben.hammack.dev/tags/html/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://ben.hammack.dev/tags/hugo/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>theme</title>
-      <link>https://ben.hammack.dev/tags/theme/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/tags/theme/</guid>
       <description></description>
     </item>
     

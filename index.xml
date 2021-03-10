@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ben H</title>
+    <title>Ben Hammack</title>
     <link>https://ben.hammack.dev/</link>
-    <description>Recent content on Ben H</description>
+    <description>Recent content on Ben Hammack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ben.hammack.dev/index.xml" rel="self" type="application/rss+xml" />
@@ -14,7 +14,7 @@
       
       <guid>https://ben.hammack.dev/about/</guid>
       <description>Me  about your career about your interests about this blog  The Blog I intend for this blog to be a public posting ground for sharing content I find interesting. For the most part, this blog will be technical in nature and reflect my side projects, hacks, and other undertakings. Though I may post a recipe or two if I make something very delicious.
- Goodreads  Donald Norman. The Design of Everyday Things Steve Krug.</description>
+Legal CYA This is my personal website.</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ben.hammack.dev/posts/reflections-on-omscs/</guid>
-      <description>Why get a Masters at OMSCS?  OMSCS is really affordable. I wanted a Masters of computer science. OMSCS is online.  Courses Below are the eight courses I took as part of the OMSCS program. Due to completing prior graduate level coursework at another university, I was able to transfer over six credits worth of work towards my degree.
+      <description>Why Masters?  I wanted it In computer science That was also affordable  Courses Below are the eight courses I took as part of the OMSCS program. Due to completing prior graduate level coursework at another university, I was able to transfer over six credits worth of work towards my degree.
 CS6035 Intro to Information Security ★★★☆☆
  Intro to Info Sec (IIS) is recommended as the best &amp;ldquo;starter&amp;rdquo; course in the OMSCS program in order to prepare new applicants for the level of rigour required to succeed in the program.</description>
     </item>
@@ -38,6 +38,15 @@ CS6035 Intro to Information Security ★★★☆☆
     </item>
     
     <item>
+      <title>Hello friend</title>
+      <link>https://ben.hammack.dev/posts/hello-world/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ben.hammack.dev/posts/hello-world/</guid>
+      <description>Now that I have a lot of time on my hands after finishing my Masters degree, I&amp;rsquo;ll be pursuing many side-projects &amp;ndash; of which one of them is this blog. To cristen this new site, I&amp;rsquo;ll begin by reviewing my time-sink of the last 3 years.</description>
+    </item>
+    
+    <item>
       <title>Hacking the D-Link DHCS-8525LH into Home Assistant</title>
       <link>https://ben.hammack.dev/posts/dlink-dhcs-8525lh/</link>
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
@@ -45,93 +54,6 @@ CS6035 Intro to Information Security ★★★☆☆
       <guid>https://ben.hammack.dev/posts/dlink-dhcs-8525lh/</guid>
       <description>My father recently has been looking to migrate his existing IP camera patchworked-system into Home Assistant as a central viewing location for all IoT devices. As part of this, he purchased a D-Link DHCS-8525LH wireless IP camera as an upgrade for an older generic knockoff unit. However unbeknownst to him, the camera is tightly coupled to the manufacturer&amp;rsquo;s proprietary app, and doesn&amp;rsquo;t allow for access outside their ecosystem&amp;hellip;
 &amp;hellip; or does it?</description>
-    </item>
-    
-    <item>
-      <title>Pan-seared Ribeye Steak</title>
-      <link>https://ben.hammack.dev/posts/pan-ribeye-steak/</link>
-      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/pan-ribeye-steak/</guid>
-      <description>Ingredients 1 - 1&amp;amp;1/4 &amp;quot; thick. Weighted pan, set heat to 7 (HIGH). Pan may smoke before steak is on, that is ok.
-Steps  Season steak in S&amp;amp;P (and probably butter beforehand). Butter will burn in pan if thrown in, so don&amp;rsquo;t. Place in pan. Not too much splattering. For medium/med-rare, cook 4-5 minutes per side. Noteworthy, when blood begins to seep out the top of the steak, it is getting close to done.</description>
-    </item>
-    
-    <item>
-      <title>Banana Bread</title>
-      <link>https://ben.hammack.dev/posts/banana-bread/</link>
-      <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/banana-bread/</guid>
-      <description>No need for a mixer for this recipe! Clean-up is easy too, if you want, you can mix everything in one mixing bowl.
-The best bananas to use for banana bread are those that are over- ripe. The yellow peelsshould be at least half browned, and the
-bananas inside squishy and browning. Prep time: 10 minutes Cook time: 55 minutes Yield: Makes one loaf
- Ingredients  2 to 3 very ripe bananas, peeled (about 1 1/4 to 1 1/2 cups mashed) 1/3 cup melted butter, unsalted or salted 1 teaspoon baking soda Pinch of salt 3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet) 1 large egg, beaten 1 teaspoon vanilla extract 1 1/2 cups of all-purpose flour   Steps  Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</description>
-    </item>
-    
-    <item>
-      <title>Oven-baked Chicken Breasts</title>
-      <link>https://ben.hammack.dev/posts/oven-baked-chicken/</link>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/oven-baked-chicken/</guid>
-      <description>Ingredients  1 - 1.5 pounds boneless chicken breasts  Steps  Preheat the oven to 400 degrees Wash chicken breasts, coat in olive oil and italian seasonings. Lightly grease glass baking pan. place breasts in pan, and garnish with black pepper Cook 24 minutes.  </description>
-    </item>
-    
-    <item>
-      <title>Breakfast Smoothie</title>
-      <link>https://ben.hammack.dev/posts/breakfast-smoothie/</link>
-      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/breakfast-smoothie/</guid>
-      <description>Ingredients  Strawberries Bananas Vanilla Yoghurt Oats Milk  Steps  Blend  </description>
-    </item>
-    
-    <item>
-      <title>Pasta Fagoli Soup</title>
-      <link>https://ben.hammack.dev/posts/pasta-fagoli-soup/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/pasta-fagoli-soup/</guid>
-      <description>Ingredients  3 slices salt pork (or half pack bacon) 1 Tbsp olive oil 1 Tbsp roasted garlic 10oz frozen seasoning blend (onions, peppers, celery) 1/2 cup chopped carrots 1 tsp Italian seasoning 1/4 tsp black pepper 32oz reduced-sodium chicken soup broth 2 cans great northern beans 1/4 cup sun-dried tomato pesto important! 1 cup ditalini pasta  Steps  Cut salt pork into small pieces. Either cook in microwave or directly into a large saucepan.</description>
-    </item>
-    
-    <item>
-      <title>Baked Spaghetti</title>
-      <link>https://ben.hammack.dev/posts/baked-spaghetti/</link>
-      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/baked-spaghetti/</guid>
-      <description>Source: https://www.allrecipes.com/recipe/222582/baked-spaghetti/
-Ingredients  1 (16 ounce) package spaghetti 1 pound ground beef 1 onion, chopped White Onion, Large 1 (32 ounce) jar meatless spaghetti sauce 1/2 teaspoon seasoned salt 2 eggs 1/3 cup grated Parmesan cheese 5 tablespoons butter, melted 2 cups small curd cottage cheese, divided 4 cups shredded mozzarella cheese, divided  Steps  Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x13-inch baking dish.</description>
-    </item>
-    
-    <item>
-      <title>Parmesan Crusted Chicken</title>
-      <link>https://ben.hammack.dev/posts/parmesan-crusted-chicken/</link>
-      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/parmesan-crusted-chicken/</guid>
-      <description>Ingredients  2 lb Boneless Skinless Chicken Breast 1 Egg 1 tbsp Water 1 tsp minced Garlic 1/2 tsp Salt 1/2 tsp Black Pepper 2 cup Shredded Parmesan Cheese 4 tbsp Butter 2 tbsp Olive Oil Bread crumbs  Steps  Cut each breast in half and pound to about 1/2″ thick. Beat egg and water in a shallow bowl until blended. Add garlic, salt and pepper and whisk to blend.</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://ben.hammack.dev/posts/my-first-post/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/posts/my-first-post/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>DERA</title>
-      <link>https://ben.hammack.dev/portfolio/dera/</link>
-      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ben.hammack.dev/portfolio/dera/</guid>
-      <description>This is a Java reference implementation of dynamic event-driven actors runtime aiming at providing adequate abstraction levels and mechanisms for modelling and developing (distributed) event-based systems. DERA leverages the intrinsic loose coupling of event-driven communication styles to support various kinds of run-time evolution and adaptation (i.e., enabling run-time flexibility) while minimizing the non-deterministic nature of traditional event-based applications (i.e., supporting formal analysis).</description>
     </item>
     
   </channel>
