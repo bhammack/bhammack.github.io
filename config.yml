@@ -1,6 +1,93 @@
-baseURL: http://example.org/
+baseURL: https://ben.hammack.dev
 languageCode: en-us
-title: My New Hugo Site
+title: ben.hammack.dev
 theme: "PaperMod"
+paginate: 5
 
 # https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#sample-configyml
+
+# enableRobotsTXT: true
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Ben Hammack
+    description: "Ben's Personal Blog"
+    keywords: [Blog, Portfolio, PaperMod]
+    author: Me
+    images: ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    # assets:
+    #   # disableHLJS: true # to disable highlight.js
+    #   # disableFingerprinting: true
+    #   favicon: "<link / abs url>"
+    #   favicon16x16: "<link / abs url>"
+    #   favicon32x32: "<link / abs url>"
+    #   apple_touch_icon: "<link / abs url>"
+    #   safari_pinned_tab: "<link / abs url>"
+
+    # label:
+    #   text: "Home"
+    #   icon: /apple-touch-icon.png
+    #   iconHeight: 35
+
+    # profile-mode
+    profileMode:
+      enabled: true # needs to be explicitly set
+      title: ben.hammack.dev
+      subtitle: "Ben's personal blog"
+      imageUrl: "https://avatars.githubusercontent.com/u/8301606"
+      imageWidth: 160
+      imageHeight: 160
+      imageTitle: hey look its me
+      buttons:
+        - name: Posts
+          url: posts
+        - name: Tags
+          url: tags
+    socialIcons:
+      - name: twitter
+        url: "https://twitter.com/"
+      - name: stackoverflow
+        url: "https://stackoverflow.com"
+      - name: github
+        url: "https://github.com/bhammack"
+      - name: RsS
+        url: "index.xml"
+
+menu:
+  main:
+    - identifier: archives
+      name: archives
+      url: /archives/
+      weight: 1
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 30
