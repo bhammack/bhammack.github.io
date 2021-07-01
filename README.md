@@ -9,6 +9,7 @@
 * https://martin.kleppmann.com/2020/12/02/bloom-filter-hash-graph-sync.html (first name subdomain of last name)
 
 **Reference**
-View the example site here:
 
-https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite
+View the example site here: https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite
+
+Use favicon.io to generate the right templates of favicon: https://favicon.io/
