@@ -11,6 +11,12 @@ paginate: 5
 # buildFuture: false
 # buildExpired: false
 
+# Allow for HTML unescaped in md files.
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Ben Hammack
@@ -27,8 +33,8 @@ params:
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: false
-    disableSpecial1stPost: false
-    disableScrollToTop: false
+    # disableSpecial1stPost: false
+    # disableScrollToTop: false
     comments: false
     hidemeta: false
     hideSummary: false
@@ -64,14 +70,19 @@ params:
         - name: Tags
           url: tags
     socialIcons:
-      - name: twitter
-        url: "https://twitter.com/"
-      - name: stackoverflow
-        url: "https://stackoverflow.com"
+      # https://github.com/adityatelange/hugo-PaperMod/wiki/Icons
+      # - name: twitter
+      #   url: "https://twitter.com/"
+      # - name: stackoverflow
+      #   url: "https://stackoverflow.com"
+      - name: email
+        url: mailto:hammack.b@gmail.com
       - name: github
         url: "https://github.com/bhammack"
-      - name: RsS
+      - name: rss
         url: "index.xml"
+      - name: linkedin
+        url: "https://linkedin.com/in/benjamin-hammack-7aa252184"
 
 menu:
   main:
