@@ -23,7 +23,7 @@ params:
     description: "Ben's Personal Blog"
     keywords: [Blog, Portfolio, PaperMod]
     author: Me
-    images: ["<link or path of image for opengraph, twitter-cards>"]
+    images: ["https://avatars.githubusercontent.com/u/8301606"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -56,33 +56,35 @@ params:
     #   iconHeight: 35
 
     # profile-mode
-    profileMode:
-      enabled: true # needs to be explicitly set
-      title: ben.hammack.dev
-      subtitle: "Ben's personal blog"
-      imageUrl: "https://avatars.githubusercontent.com/u/8301606"
-      imageWidth: 160
-      imageHeight: 160
-      imageTitle: hey look its me
-      buttons:
-        - name: Posts
-          url: posts
-        - name: Tags
-          url: tags
+    homeInfoParams:
+      Title: Ben's personal blog
+      Content: >
+        ![me](https://avatars.githubusercontent.com/u/8301606?s=100)
+        Hello! Welcome to my personal website. I post about things I've created,
+        hacks, and other side projects.
+    # profileMode:
+    #   enabled: true # needs to be explicitly set
+    #   title: ben.hammack.dev
+    #   subtitle: "Ben's personal blog"
+    #   imageUrl: "https://avatars.githubusercontent.com/u/8301606"
+    #   imageWidth: 160
+    #   imageHeight: 160
+    #   imageTitle: hey look its me
+    #   buttons:
+    #     - name: Posts
+    #       url: posts
+    #     - name: Tags
+    #       url: tags
     socialIcons:
       # https://github.com/adityatelange/hugo-PaperMod/wiki/Icons
       # - name: twitter
       #   url: "https://twitter.com/"
       # - name: stackoverflow
       #   url: "https://stackoverflow.com"
-      - name: email
-        url: mailto:hammack.b@gmail.com
       - name: github
         url: "https://github.com/bhammack"
       - name: rss
         url: "index.xml"
-      - name: linkedin
-        url: "https://linkedin.com/in/benjamin-hammack-7aa252184"
 
 menu:
   main:
@@ -98,7 +100,11 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: search
-      name: search
-      url: /search/
+    - identifier: about
+      name: about
+      url: /about/
       weight: 30
+    # - identifier: search
+    #   name: 🔍
+    #   url: /search/
+    #   weight: 30
