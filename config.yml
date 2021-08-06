@@ -56,10 +56,10 @@ params:
     #   iconHeight: 35
 
     # profile-mode
+    # You can add this line to Content to show an image: ![me](https://avatars.githubusercontent.com/u/8301606?s=100)
     homeInfoParams:
       Title: Ben's personal blog
       Content: >
-        ![me](https://avatars.githubusercontent.com/u/8301606?s=100)
         Hello! Welcome to my personal website. I post about things I've created,
         hacks, and other side projects.
     # profileMode:
