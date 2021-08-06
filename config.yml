@@ -1,6 +1,6 @@
-baseURL: https://ben.hammack.dev
+baseURL: https://hammack.dev
 languageCode: en-us
-title: ben.hammack.dev
+title: hammack.dev
 theme: "PaperMod"
 paginate: 5
 
