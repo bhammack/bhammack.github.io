@@ -1,3 +1,5 @@
+**List of personal blogs**: https://refined.blog/
+
 **Example blogs from HN**
 * https://alexnixon.github.io
 * https://www.pashabitz.com/
