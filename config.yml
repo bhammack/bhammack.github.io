@@ -1,6 +1,9 @@
 baseURL: https://hammack.dev
 languageCode: en-us
-title: hammack.dev
+title: >
+  ![logo](https://hammack.dev/favicon-32x32.png)
+  hammack.dev
+
 theme: "PaperMod"
 paginate: 5
 
