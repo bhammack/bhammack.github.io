@@ -20,4 +20,8 @@ I recently purchased an [Amazfit GTS](https://www.amazfit.com/en/gts) as a cheap
 Notify for Amazfit offers an every-two-days backup feature (to either Google Drive or local storage) by generating a file `notify_backupA.nak`. Using `file`, it's revealed this is just a renamed `zip` archive. Unzipping the file extracts two:
 * `backup.bak UTF-8 Unicode text, with very long lines, with no line terminators`
 * `backup.db SQLite 3.x database, user version 18, last written using SQLite version 3018002`
-* 
+
+Opening `backup.db` in a sqlite3 database explorer, we can see the following tables and indicies
+![index](https://imgur.com/a/92dctU5)
+    
+    
