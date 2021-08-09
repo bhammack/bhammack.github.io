@@ -22,6 +22,6 @@ Notify for Amazfit offers an every-two-days backup feature (to either Google Dri
 * `backup.db SQLite 3.x database, user version 18, last written using SQLite version 3018002`
 
 Opening `backup.db` in a sqlite3 database explorer, we can see the following tables and indicies
-![index](https://imgur.com/a8grUuK)
+![index](https://imgur.com/a8grUuK.png)
     
     
