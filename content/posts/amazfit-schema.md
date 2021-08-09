@@ -1,7 +1,7 @@
 ---
 title: "Amazfit GTS sqlite3 schema"
 date: 2021-07-01T21:22:25Z
-description: "Notes on my reverse engineering of the Notify for Android notify_backupA.nak export."
+description: "Reverse engineering notes on a foreign database schema"
 tags: ['amazfit']
 showToc: false
 TocOpen: false
