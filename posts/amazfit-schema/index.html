@@ -5,7 +5,7 @@
 <meta name=robots content="index, follow">
 <title>Amazfit GTS sqlite3 schema | hammack.dev</title>
 <meta name=keywords content="amazfit">
-<meta name=description content="Notes on my reverse engineering of the Notify for Android notify_backupA.nak export.">
+<meta name=description content="Reverse engineering notes on a foreign database schema">
 <meta name=author content="Me">
 <link rel=canonical href=https://hammack.dev/posts/amazfit-schema/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
@@ -19,7 +19,7 @@
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
 <meta property="og:title" content="Amazfit GTS sqlite3 schema">
-<meta property="og:description" content="Notes on my reverse engineering of the Notify for Android notify_backupA.nak export.">
+<meta property="og:description" content="Reverse engineering notes on a foreign database schema">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://hammack.dev/posts/amazfit-schema/">
 <meta property="og:image" content="https://site-cdn.huami.com/files/amazfit/en/gts/section-4.jpg"><meta property="article:section" content="posts">
@@ -28,9 +28,9 @@
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://site-cdn.huami.com/files/amazfit/en/gts/section-4.jpg">
 <meta name=twitter:title content="Amazfit GTS sqlite3 schema">
-<meta name=twitter:description content="Notes on my reverse engineering of the Notify for Android notify_backupA.nak export.">
+<meta name=twitter:description content="Reverse engineering notes on a foreign database schema">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://hammack.dev/posts/"},{"@type":"ListItem","position":3,"name":"Amazfit GTS sqlite3 schema","item":"https://hammack.dev/posts/amazfit-schema/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Amazfit GTS sqlite3 schema","name":"Amazfit GTS sqlite3 schema","description":"Notes on my reverse engineering of the Notify for Android notify_backupA.nak export.","keywords":["amazfit"],"articleBody":"I recently purchased an Amazfit GTS as a cheap smart watch to record fitness metrics. The partnered app Zepp (formerly Amazfit) for Android devices did not appear to have any means of data export. In the pursuit of securing my digital footprint I installed an alternative app for managing the device Notify for Amazfit, which boasts to be “privacy first”.\nNotify for Amazfit offers an every-two-days backup feature (to either Google Drive or local storage) by generating a file notify_backupA.nak. Using file, it’s revealed this is just a renamed zip archive. Unzipping the file extracts two:\n backup.bak (haven’t investigated what this file is) backup.db (a sqlite3 schema database)   ","wordCount":"108","inLanguage":"en","image":"https://site-cdn.huami.com/files/amazfit/en/gts/section-4.jpg","datePublished":"2021-07-01T21:22:25Z","dateModified":"2021-07-01T21:22:25Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://hammack.dev/posts/amazfit-schema/"},"publisher":{"@type":"Organization","name":"hammack.dev","logo":{"@type":"ImageObject","url":"https://hammack.dev/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Amazfit GTS sqlite3 schema","name":"Amazfit GTS sqlite3 schema","description":"Reverse engineering notes on a foreign database schema","keywords":["amazfit"],"articleBody":"I recently purchased an Amazfit GTS as a cheap smart watch to record fitness metrics. The partnered app Zepp (formerly Amazfit) for Android devices did not appear to have any means of data export. In the pursuit of securing my digital footprint I installed an alternative app for managing the device Notify for Amazfit, which boasts to be “privacy first”.\nNotify for Amazfit offers an every-two-days backup feature (to either Google Drive or local storage) by generating a file notify_backupA.nak. Using file, it’s revealed this is just a renamed zip archive. Unzipping the file extracts two:\n backup.bak (haven’t investigated what this file is) backup.db (a sqlite3 schema database)   ","wordCount":"108","inLanguage":"en","image":"https://site-cdn.huami.com/files/amazfit/en/gts/section-4.jpg","datePublished":"2021-07-01T21:22:25Z","dateModified":"2021-07-01T21:22:25Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://hammack.dev/posts/amazfit-schema/"},"publisher":{"@type":"Organization","name":"hammack.dev","logo":{"@type":"ImageObject","url":"https://hammack.dev/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -74,7 +74,7 @@
 Amazfit GTS sqlite3 schema
 </h1>
 <div class=post-description>
-Notes on my reverse engineering of the Notify for Android notify_backupA.nak export.
+Reverse engineering notes on a foreign database schema
 </div>
 <div class=post-meta>July 1, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me
 </div>
