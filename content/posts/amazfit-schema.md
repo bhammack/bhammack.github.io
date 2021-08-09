@@ -1,5 +1,5 @@
 ---
-title: "Amazfit GTS sqlite3 schema"
+title: "Amazfit GTS sqlite3 Schema"
 date: 2021-07-01T21:22:25Z
 description: "Reverse engineering notes on a foreign database schema"
 tags: ['amazfit']
@@ -23,5 +23,14 @@ Notify for Amazfit offers an every-two-days backup feature (to either Google Dri
 
 Opening `backup.db` in a sqlite3 database explorer, we can see the following tables and indicies
 ![index](https://imgur.com/a8grUuK.png)
-    
-    
+
+However inspecting each table individually, I see that some are empty:
+```
+Spo2Data - empty
+StressData - empty
+android_metadata - only contains one entry, "en_US"
+rush_co_uk_rushorm_android_RushBitmapFile - empty
+rush_co_uk_rushorm_android_RushJSONFile - empty
+rush_co_uk_rushorm_android_RushTextFile - empty
+rush_com_mc_miband1_model2_Weight - empty (haven't ever recorded any weight entries)
+```
