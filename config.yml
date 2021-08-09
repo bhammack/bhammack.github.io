@@ -63,8 +63,8 @@ params:
     homeInfoParams:
       Title: Ben's personal blog
       Content: >
-        Hello! Welcome to my personal website. I post about things I've created,
-        hacks, and other side projects.
+        Hello! Welcome to my personal website - I post about the things I've created,
+        hacks, and other side projects. Hope you find something of interest!
     # profileMode:
     #   enabled: true # needs to be explicitly set
     #   title: ben.hammack.dev
