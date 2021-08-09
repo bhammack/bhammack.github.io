@@ -6,6 +6,13 @@ tags: ['amazfit']
 showToc: false
 TocOpen: false
 draft: false
+cover:
+    image: https://site-cdn.huami.com/files/amazfit/en/gts/section-4.jpg
+    # can also paste direct link from external site
+    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+    # alt: "<alt text>"
+    # caption: "<text>"
+    # relative: false # To use relative path for cover image, used in hugo Page-bundles
 ---
 
 I recently purchased an [Amazfit GTS](https://www.amazfit.com/en/gts) as a cheap smart watch to record fitness metrics. The partnered app [Zepp (formerly Amazfit)](https://play.google.com/store/apps/details?id=com.huami.watch.hmwatchmanager) for Android devices did not appear to have any means of data export. In the pursuit of securing my digital footprint I installed an alternative app for managing the device [Notify for Amazfit](https://play.google.com/store/apps/details?id=com.mc.amazfit1), which boasts to be "privacy first". 
