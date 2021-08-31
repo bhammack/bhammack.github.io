@@ -89,7 +89,7 @@ params:
 menu:
   main:
     - identifier: archives
-      name: archives
+      name: Archives
       url: /archives/
       weight: 1
     # - identifier: categories
@@ -97,11 +97,11 @@ menu:
     #   url: /categories/
     #   weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
     - identifier: about
-      name: about
+      name: About
       url: /about/
       weight: 30
     # - identifier: search
