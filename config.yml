@@ -1,6 +1,6 @@
 baseURL: https://hammack.dev
 languageCode: en-us
-title: hammack.dev
+title: Ben Hammack
 theme: "PaperMod"
 paginate: 5
 
@@ -18,73 +18,73 @@ markup:
       unsafe: true
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Ben Hammack
-    description: "Ben's Personal Blog"
-    keywords: [Blog, Portfolio, PaperMod]
-    author: Me
-    images: ["https://avatars.githubusercontent.com/u/8301606"]
-    DateFormat: "January 2, 2006"
-    defaultTheme: auto # dark, light
-    disableThemeToggle: false
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Ben Hammack
+  description: "Ben's Personal Blog"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  images: ["https://avatars.githubusercontent.com/u/8301606"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
 
-    ShowReadingTime: true
-    ShowShareButtons: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: false
-    # disableSpecial1stPost: false
-    # disableScrollToTop: false
-    comments: false
-    hidemeta: false
-    hideSummary: false
-    showtoc: false
-    tocopen: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  # disableSpecial1stPost: false
+  # disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
 
-    # assets:
-    #   # disableHLJS: true # to disable highlight.js
-    #   # disableFingerprinting: true
-    #   favicon: "<link / abs url>"
-    #   favicon16x16: "<link / abs url>"
-    #   favicon32x32: "<link / abs url>"
-    #   apple_touch_icon: "<link / abs url>"
-    #   safari_pinned_tab: "<link / abs url>"
+  # assets:
+  #   # disableHLJS: true # to disable highlight.js
+  #   # disableFingerprinting: true
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
 
-    # label:
-    #   text: "Home"
-    #   icon: /apple-touch-icon.png
-    #   iconHeight: 35
+  # label:
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
 
-    # profile-mode
-    # You can add this line to Content to show an image: ![me](https://avatars.githubusercontent.com/u/8301606?s=100)
-    homeInfoParams:
-      Title: Ben's personal blog
-      Content: >
-        Hello! Welcome to my personal website - I post about the things I've created,
-        hacks, and other side projects. Hope you find something of interest!
-    # profileMode:
-    #   enabled: true # needs to be explicitly set
-    #   title: ben.hammack.dev
-    #   subtitle: "Ben's personal blog"
-    #   imageUrl: "https://avatars.githubusercontent.com/u/8301606"
-    #   imageWidth: 160
-    #   imageHeight: 160
-    #   imageTitle: hey look its me
-    #   buttons:
-    #     - name: Posts
-    #       url: posts
-    #     - name: Tags
-    #       url: tags
-    socialIcons:
-      # https://github.com/adityatelange/hugo-PaperMod/wiki/Icons
-      # - name: twitter
-      #   url: "https://twitter.com/"
-      # - name: stackoverflow
-      #   url: "https://stackoverflow.com"
-      - name: github
-        url: "https://github.com/bhammack"
-      - name: rss
-        url: "index.xml"
+  # profile-mode
+  # You can add this line to Content to show an image: ![me](https://avatars.githubusercontent.com/u/8301606?s=100)
+  homeInfoParams:
+    Title: Ben's personal blog
+    Content: >
+      Hello! Welcome to my personal website - I post about the things I've created,
+      hacks, and other side projects. Hope you find something of interest!
+  # profileMode:
+  #   enabled: true # needs to be explicitly set
+  #   title: ben.hammack.dev
+  #   subtitle: "Ben's personal blog"
+  #   imageUrl: "https://avatars.githubusercontent.com/u/8301606"
+  #   imageWidth: 160
+  #   imageHeight: 160
+  #   imageTitle: hey look its me
+  #   buttons:
+  #     - name: Posts
+  #       url: posts
+  #     - name: Tags
+  #       url: tags
+  socialIcons:
+    # https://github.com/adityatelange/hugo-PaperMod/wiki/Icons
+    # - name: twitter
+    #   url: "https://twitter.com/"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/bhammack"
+    - name: rss
+      url: "index.xml"
 
 menu:
   main:
