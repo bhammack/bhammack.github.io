@@ -8,7 +8,7 @@ disableShare: true
 
 I'm a software engineer specializing in software integrations. I employ novel solutions and best practices in all the code-bases I touch, crafting code not only for the customer, but also for my fellow engineers.
 
-![An old picture of myself and a late beloved friend](https://avatars.githubusercontent.com/u/8301606#center)
+![An old picture of myself and a late beloved friend](https://avatars.githubusercontent.com/u/8301606?s=300#center)
 
 ## What are my tools of the trade?
 
