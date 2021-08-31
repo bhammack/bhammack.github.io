@@ -1,13 +1,13 @@
 ---
 title: "Reverse SSH tunneling into ubiquitious devices"
-date: 2021-08-29T00:00:00Z
+date: "2021-08-29"
 description: "Configuring a host to maintain a persistent reverse ssh tunnel"
 tags: ['ssh', 'shell', 'linux', 'mobile']
 showToc: false
 TocOpen: false
 draft: false
 cover:
-    image: https://images.unsplash.com/photo-1589805719243-774da93c3cb8
+    image: https://tunnelingonline.com/wp-content/uploads/2020/08/tunnel-under-construction.jpg
     # can also paste direct link from external site
     # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
     # alt: "<alt text>"

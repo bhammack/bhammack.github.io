@@ -1,6 +1,6 @@
 ---
 title: "Test"
-date: 2021-07-01T21:22:25Z
+date: "2021-06-01"
 description: "Desc Text."
 tags: ['first']
 showToc: false

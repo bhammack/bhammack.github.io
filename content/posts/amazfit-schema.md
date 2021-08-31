@@ -1,6 +1,6 @@
 ---
 title: "Amazfit GTS sqlite3 Schema"
-date: 2021-07-01T21:22:25Z
+date: "2021-07-01"
 description: "Reverse engineering notes on a foreign database schema"
 tags: ['amazfit']
 showToc: false
