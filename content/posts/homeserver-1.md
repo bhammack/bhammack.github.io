@@ -28,7 +28,7 @@ You can use a free service such as [DuckDNS](https://duckdns.org) or [NoIP](http
 **I'm looking for something serious and long-term**: 
 Purchase a domain name from a registrar, such as [Google Domains](https://domains.google.com), [Namecheap](https://namecheap.com), or [CloudFlare](https://cloudflare.com)
     
-For my domain name configuration, I use CloudFlare.
+For my domain name management, I use CloudFlare. Keep reading to find out why!
 
 ## What do I do with my domain name?
 Your next step is to create or configure an `A-record` that resolves to your server's IP address.
