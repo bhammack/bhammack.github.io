@@ -2,7 +2,7 @@
 title: "Home-server architecture"
 date: "2021-10-25"
 description: "A deep dive series into my home-server architecture."
-tags: ['ssh', 'shell', 'linux', 'mobile']
+tags: ['dns', 'internet', 'home-server', 'self-hosted']
 showToc: false
 TocOpen: false
 draft: false
