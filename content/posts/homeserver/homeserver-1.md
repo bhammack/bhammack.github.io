@@ -32,5 +32,5 @@ For my domain name management, I use CloudFlare. Keep reading to find out why!
 
 ## What do I do with my domain name?
 Your next step is to create or configure an `A-record` that resolves to your server's IP address. If you purchased your domain name from a registrar, most have a tool to guide you through the process of creating records. 
-![My A-records managed in CloudFlare](images/a-record.png)
+![My A-records managed in CloudFlare](./images/a-record.png)
     
