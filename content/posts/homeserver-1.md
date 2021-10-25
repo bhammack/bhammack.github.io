@@ -26,9 +26,10 @@ You have options:
 You can use a free service such as [DuckDNS](https://duckdns.org) or [NoIP](https://noip.com) that can provide you with your own custom domain name. The limitation of these websites is that you are acquiring a subdomain and have limited configuration of your DNS records.
     
 **I'm looking for something serious and long-term**: 
-Purchase a domain name from a registrar, such as [Google Domains](https://domains.google.com), [Namecheap](https://namecheap.com).
-
+Purchase a domain name from a registrar, such as [Google Domains](https://domains.google.com), [Namecheap](https://namecheap.com), or [CloudFlare](https://cloudflare.com)
     
+For my domain name configuration, I use CloudFlare.
+
 ## What do I do with my domain name?
 Your next step is to create or configure an `A-record` that resolves to your server's IP address.
     
