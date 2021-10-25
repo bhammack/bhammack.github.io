@@ -22,7 +22,7 @@ Great question! The first step in taking the plunge is to acquire a domain name.
 ## Where do I get a domain name?
 You have options:
     
-**I'm just looking for something casual**: 
+**I'm just looking for some casual non-committal fun**: 
 You can use a free service such as [DuckDNS](https://duckdns.org) or [NoIP](https://noip.com) that can provide you with your own custom domain name. The limitation of these websites is that you are acquiring a subdomain and have limited configuration of your DNS records.
     
 **I'm looking for something serious and long-term**: 
