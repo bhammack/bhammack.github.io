@@ -31,6 +31,16 @@ Purchase a domain name from a registrar, such as [Google Domains](https://domain
 For my domain name management, I use CloudFlare. Keep reading to find out why!
 
 ## What do I do with my domain name?
-Your next step is to create or configure an `A-record` that resolves to your server's IP address. If you purchased your domain name from a registrar, most have a tool to guide you through the process of creating records. 
-![My A-records managed in CloudFlare](images/a-record.png)
-    
+Your next step is to create or configure an `A-record` that resolves to your server's IP address. How this is done depends on your previous option above.
+* If you're using a free subdomain service like DuckDNS or NoIP, they may have provided you with a secret token. Calling their refresh API will automatically publish your IP address as the A-record.
+* If you purchased your domain name from a registrar, most have a tool to guide you through the process of creating records. 
+
+## Can I see your configuration as a reference?
+Sure. As mentioned previousily, my domain name is managed through Cloudflare. This is what my DNS dashboard looks like. 
+![a-records managed in CloudFlare](images/a-record.png)
+In the screenshot above, I had two DNS records.
+* A `CNAME` record. This record defers resolution of `hammack.dev` to `bhammack.github.io`. This is the website you are currently viewing!
+* An `A` record. This record is a [Wildcard DNS record](https://en.wikipedia.org/wiki/Wildcard_DNS_record). In effect, this means any resolution of a subdomain of `hammack.dev` such as `jenkins.hammack.dev` or `photos.hammack.dev` will resolve to the IP address listed.
+
+
+
