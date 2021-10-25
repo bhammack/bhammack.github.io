@@ -17,7 +17,7 @@ cover:
 
 
 # How do I begin?
-Great question! The first step in taking the plunge is to acquire a domain name. A domain name `wikipedia.org`, `amazon.com`, or `hammack.dev` is your ticket-to-ride in exposing your presence to the public internet and are configured through the backbone of the internet - the domain name system. [DNS records](https://www.cloudflare.com/learning/dns/dns-records/) can be thought of as the internet's phonebook, and by acquiring a domain you are adding your presences to the world.
+Great question! The first step in taking the plunge is to acquire a domain name. A domain name `wikipedia.org`, `amazon.com`, or `hammack.dev` is your ticket-to-ride in exposing your presence to the public internet and are configured through the backbone of the internet - the domain name system. [DNS records](https://www.cloudflare.com/learning/dns/dns-records/) can be thought of as the internet's phonebook, and by acquiring a domain you are adding your presence to the world.
     
 ## Where do I get a domain name?
 You have options:
