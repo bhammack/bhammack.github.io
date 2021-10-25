@@ -31,7 +31,6 @@ Purchase a domain name from a registrar, such as [Google Domains](https://domain
 For my domain name management, I use CloudFlare. Keep reading to find out why!
 
 ## What do I do with my domain name?
-Your next step is to create or configure an `A-record` that resolves to your server's IP address.
-    
+Your next step is to create or configure an `A-record` that resolves to your server's IP address. If you purchased your domain name from a registrar, most have a tool to guide you through the process of creating records. 
     
     
