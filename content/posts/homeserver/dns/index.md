@@ -1,5 +1,5 @@
 ---
-title: "Home-server architecture"
+title: "Home-server architecture - DNS"
 date: "2021-10-25"
 description: "A deep dive series into my home-server architecture."
 tags: ['dns', 'internet', 'home-server', 'self-hosted']
@@ -36,11 +36,12 @@ Your next step is to create or configure an `A-record` that resolves to your ser
 * If you purchased your domain name from a registrar, most have a tool to guide you through the process of creating records. 
 
 ## Can I see your configuration as a reference?
-Sure. As mentioned previousily, my domain name is managed through Cloudflare. This is what my DNS dashboard looks like. 
+Sure! As mentioned previousily, my domain name is managed through Cloudflare. This is what my DNS dashboard looks like. 
 ![a-records managed in CloudFlare](images/a-record.png)
 In the screenshot above, I had two DNS records.
 * A `CNAME` record. This record defers resolution of `hammack.dev` to `bhammack.github.io`. This is the website you are currently viewing!
-* An `A` record. This record is a [Wildcard DNS record](https://en.wikipedia.org/wiki/Wildcard_DNS_record). In effect, this means any resolution of a subdomain of `hammack.dev` such as `jenkins.hammack.dev` or `photos.hammack.dev` will resolve to the IP address listed.
+* An `A` record. This record is a [Wildcard DNS record](https://en.wikipedia.org/wiki/Wildcard_DNS_record). In effect, this means any resolution of a subdomain of `hammack.dev` such as `jenkins.hammack.dev` or `photos.hammack.dev` will resolve to the IP address listed. This configuration is critical for hosting of multiple services.
 
 
-
+## Why Wildcard DNS records? Why not fixed A records?
+Because I only expose one IP address to the internet, I elected to use a wildcard DNS record. Alternatively, I could specify subdomain A-records for each of my services but this would become difficult to scale and manage. The downside of using a wildcard record is that Cloudflare cannot proxy or cache traffic destined for subdomains.
