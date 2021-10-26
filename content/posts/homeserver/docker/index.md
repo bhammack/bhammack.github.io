@@ -8,10 +8,5 @@ TocOpen: false
 draft: false
 cover:
     image: https://www.pcgamesn.com/wp-content/uploads/2020/11/cs-go-shipment-modern-warfare.jpg
-    # can also paste direct link from external site
-    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
-    # alt: "<alt text>"
-    # caption: "<text>"
-    # relative: false # To use relative path for cover image, used in hugo Page-bundles
 ---
 

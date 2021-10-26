@@ -1,7 +1,7 @@
 ---
 title: "Running RuneLite on Android"
 date: "2021-10-31"
-description: "Reverse engineering notes on a foreign database schema"
+description: "Configuring chroot and VNC within a terminal emulator."
 tags: ['runelite', 'android', 'termux']
 showToc: false
 TocOpen: false
