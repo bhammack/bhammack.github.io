@@ -6,10 +6,10 @@ paginate: 5
 
 # https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#sample-configyml
 
-# enableRobotsTXT: true
-# buildDrafts: false
-# buildFuture: false
-# buildExpired: false
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: true
+buildExpired: false
 
 # Allow for HTML unescaped in md files.
 markup:
@@ -18,11 +18,11 @@ markup:
       unsafe: true
 
 # Needed for search feature
-# outputs:
-#   home:
-#     - HTML
-#     - RSS
-#     - JSON
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
