@@ -1,6 +1,6 @@
 ---
 title: "Running RuneLite on Android"
-date: "2021-10-31"
+date: "2021-10-25"
 description: "Configuring chroot and VNC within a terminal emulator."
 tags: ['runelite', 'android', 'termux']
 showToc: false
