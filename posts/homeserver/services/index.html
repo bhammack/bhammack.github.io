@@ -30,7 +30,7 @@
 <meta name=twitter:title content="Home-server architecture - Services">
 <meta name=twitter:description content="A deep dive series into my home-server architecture.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://hammack.dev/posts/"},{"@type":"ListItem","position":3,"name":"Home-server architecture - Services","item":"https://hammack.dev/posts/homeserver/services/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Home-server architecture - Services","name":"Home-server architecture - Services","description":"A deep dive series into my home-server architecture.","keywords":["dns","internet","home-server","self-hosted"],"articleBody":"As described in the previous post, nearly all the software running on my home server is managed through docker containers. In this post, I’ll deep dive some of the service I run, and integrations I’ve created between containers.\nCore services The heart of the ability to self-host web applications is Traefik, a fantastic docker-first reverse proxy. Traefik is the secret sauce that allows me to expose multiple web apps - each under their own subdomain - despite only having one public IP from my internet service provider. By writing entry point rules for each service definition within docker-compose.yml, Traefik will route traffic to the appropriate container. In addition to reverse proxying, Traefik also handles generation of Let’s Encrypt certificates for all subdomains (via wildcard cert), auto-upgrades clients from http to https, and facilitates plugins for other middleware.\nTo protect against unauthorized access to my applications, Traefik is running with an authentication middleware known as Authelia. This middleware guards access by implementing forward authentication. Clients are promoted to log in when accessing a domain that is protected if they do not already have an authentication cookie. Authelia offers both single-factor and multi-factor authentication methods, and is as easy to incorporate for any container as adding a label within docker-compose.yml.\nA common challenge that I experience with this configuration however is that many applications prefer to manage their own user database. Any user (myself) would need to log in to Authelia first, then to the respective application (such as Jenkins, Portainer, Jellyfin, etc), which quickly gets irritating remembering passwords despite the user already passing the server-wide authentication check. Authelia itself is not an identity provider; only an authentication server. To resolve this issue and make the entire stack more open to scale, I established a private LDAP server to serve user identities using OpenLDAP. This brings the added benefit of integrating directly with applications that consume LDAP queries as authorization sources.\nSide note - It’s often necessary to disable authentication or force a single-user mode within web applications protected by Authelia. Forward auth isn’t a new strategy, so fortunately many applications offer the ability to do this, however it’s typically an option buried in settings and not enabled by default.\nAdministrative services Portainer Web ssh VScode\nServices Minecraft I run a minecraft game server\nPiHole  network wide DNS black hole\n Node-RED  describe all the custom flows you’ve created\n Home Assistant  this is what got me into self hosting\n Jenkins  various jobs and operations\n Other services Portainer - a simple docker container management web application. Gotify - a self-hosted push notification platform that provides a variety of integration points for other services.\n","wordCount":"439","inLanguage":"en","image":"https://www.europarl.europa.eu/resources/library/images/20200928PHT88015/20200928PHT88015_original.jpg","datePublished":"2021-12-12T00:00:00Z","dateModified":"2021-12-12T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://hammack.dev/posts/homeserver/services/"},"publisher":{"@type":"Organization","name":"Ben Hammack","logo":{"@type":"ImageObject","url":"https://hammack.dev/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Home-server architecture - Services","name":"Home-server architecture - Services","description":"A deep dive series into my home-server architecture.","keywords":["dns","internet","home-server","self-hosted"],"articleBody":"As described in the previous post, nearly all the software running on my home server is managed through docker containers. In this post, I’ll deep dive some of the service I run, and integrations I’ve created between containers.\nCore services To advertise my home server to the world, I run a simple container that reports my IP to Cloudflare, and updates the wildcard A-record to the requestor’s address.\nThe heart of the ability to self-host web applications is Traefik, a fantastic docker-first reverse proxy. Traefik is the secret sauce that allows me to expose multiple web apps - each under their own subdomain - despite only having one public IP from my internet service provider. By writing entry point rules for each service definition within docker-compose.yml, Traefik will route traffic to the appropriate container. In addition to reverse proxying, Traefik also handles generation of Let’s Encrypt certificates for all subdomains (via wildcard cert), auto-upgrades clients from http to https, and facilitates plugins for other middleware.\nTo protect against unauthorized access to my applications, Traefik is running with an authentication middleware known as Authelia. This middleware guards access by implementing forward authentication. Clients are promoted to log in when accessing a domain that is protected if they do not already have an authentication cookie. Authelia offers both single-factor and multi-factor authentication methods, and is as easy to incorporate for any container as adding a label within docker-compose.yml.\nA common challenge that I experience with this configuration however is that many applications prefer to manage their own user database. Any user (myself) would need to log in to Authelia first, then to the respective application (such as Jenkins, Portainer, Jellyfin, etc), which quickly gets irritating remembering passwords despite the user already passing the server-wide authentication check. Authelia itself is not an identity provider; only an authentication server. To resolve this issue and make the entire stack more open to scale, I established a private LDAP server to serve user identities using OpenLDAP. This brings the added benefit of integrating directly with applications that consume LDAP queries as authorization sources.\nSide note - It’s often necessary to disable authentication or force a single-user mode within web applications protected by Authelia. Forward auth isn’t a new strategy, so fortunately many applications offer the ability to do this, however it’s typically an option buried in settings and not enabled by default.\nAdministrative services  Portainer Web ssh VScode Webtop Novnc Grafana  Utilities  PiHole Jenkins Node-RED Gotify Diun Mailrise  Home  Home Assistant MPD MQTT Mongo ESPHome  Data  Filebrowser Syncthing Jellyfin Photoprism Gitea  Other  Minecraft  ","wordCount":"427","inLanguage":"en","image":"https://www.europarl.europa.eu/resources/library/images/20200928PHT88015/20200928PHT88015_original.jpg","datePublished":"2021-12-12T00:00:00Z","dateModified":"2021-12-12T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://hammack.dev/posts/homeserver/services/"},"publisher":{"@type":"Organization","name":"Ben Hammack","logo":{"@type":"ImageObject","url":"https://hammack.dev/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -88,36 +88,49 @@ A deep dive series into my home-server architecture.
 </figure>
 <div class=post-content><p>As described in the previous post, nearly all the software running on my home server is managed through docker containers. In this post, I&rsquo;ll deep dive some of the service I run, and integrations I&rsquo;ve created between containers.</p>
 <h2 id=core-services>Core services<a hidden class=anchor aria-hidden=true href=#core-services>#</a></h2>
+<p>To advertise my home server to the world, I run a simple container that reports my IP to Cloudflare, and updates the wildcard A-record to the requestor&rsquo;s address.</p>
 <p>The heart of the ability to self-host web applications is <a href=https://traefik.io/traefik/>Traefik</a>, a fantastic docker-first reverse proxy. Traefik is the secret sauce that allows me to expose multiple web apps - each under their own subdomain - despite only having one public IP from my internet service provider. By writing entry point rules for each service definition within <code>docker-compose.yml</code>, Traefik will route traffic to the appropriate container. In addition to reverse proxying, Traefik also handles generation of Let&rsquo;s Encrypt certificates for all subdomains (via wildcard cert), auto-upgrades clients from http to https, and facilitates plugins for other middleware.</p>
 <p>To protect against unauthorized access to my applications, Traefik is running with an authentication middleware known as <a href=https://www.authelia.com/>Authelia</a>. This middleware guards access by implementing forward authentication. Clients are promoted to log in when accessing a domain that is protected if they do not already have an authentication cookie. Authelia offers both single-factor and multi-factor authentication methods, and is as easy to incorporate for any container as adding a label within <code>docker-compose.yml</code>.</p>
 <p>A common challenge that I experience with this configuration however is that many applications prefer to manage their own user database. Any user (myself) would need to log in to Authelia first, then to the respective application (such as Jenkins, Portainer, Jellyfin, etc), which quickly gets irritating remembering passwords despite the user already passing the server-wide authentication check. Authelia itself is <em>not</em> an identity provider; only an authentication server. To resolve this issue and make the entire stack more open to scale, I established a private LDAP server to serve user identities using <a href=https://github.com/osixia/docker-openldap>OpenLDAP</a>. This brings the added benefit of integrating directly with applications that consume LDAP queries as authorization sources.</p>
 <p><em>Side note</em> - It&rsquo;s often necessary to disable authentication or force a single-user mode within web applications protected by Authelia. Forward auth isn&rsquo;t a new strategy, so fortunately many applications offer the ability to do this, however it&rsquo;s typically an option buried in settings and not enabled by default.</p>
 <h2 id=administrative-services>Administrative services<a hidden class=anchor aria-hidden=true href=#administrative-services>#</a></h2>
-<p>Portainer
-Web ssh
-VScode</p>
-<h2 id=services>Services<a hidden class=anchor aria-hidden=true href=#services>#</a></h2>
-<h3 id=minecraft>Minecraft<a hidden class=anchor aria-hidden=true href=#minecraft>#</a></h3>
-<p>I run a minecraft game server</p>
-<h3 id=pihole>PiHole<a hidden class=anchor aria-hidden=true href=#pihole>#</a></h3>
-<blockquote>
-<p>network wide DNS black hole</p>
-</blockquote>
-<h3 id=node-red>Node-RED<a hidden class=anchor aria-hidden=true href=#node-red>#</a></h3>
-<blockquote>
-<p>describe all the custom flows you&rsquo;ve created</p>
-</blockquote>
-<h3 id=home-assistant>Home Assistant<a hidden class=anchor aria-hidden=true href=#home-assistant>#</a></h3>
-<blockquote>
-<p>this is what got me into self hosting</p>
-</blockquote>
-<h3 id=jenkins>Jenkins<a hidden class=anchor aria-hidden=true href=#jenkins>#</a></h3>
-<blockquote>
-<p>various jobs and operations</p>
-</blockquote>
-<h3 id=other-services>Other services<a hidden class=anchor aria-hidden=true href=#other-services>#</a></h3>
-<p><strong>Portainer</strong> - a simple docker container management web application.
-<strong>Gotify</strong> - a self-hosted push notification platform that provides a variety of integration points for other services.</p>
+<ul>
+<li>Portainer</li>
+<li>Web ssh</li>
+<li>VScode</li>
+<li>Webtop</li>
+<li>Novnc</li>
+<li>Grafana</li>
+</ul>
+<h2 id=utilities>Utilities<a hidden class=anchor aria-hidden=true href=#utilities>#</a></h2>
+<ul>
+<li>PiHole</li>
+<li>Jenkins</li>
+<li>Node-RED</li>
+<li>Gotify</li>
+<li>Diun</li>
+<li>Mailrise</li>
+</ul>
+<h2 id=home>Home<a hidden class=anchor aria-hidden=true href=#home>#</a></h2>
+<ul>
+<li>Home Assistant</li>
+<li>MPD</li>
+<li>MQTT</li>
+<li>Mongo</li>
+<li>ESPHome</li>
+</ul>
+<h2 id=data>Data<a hidden class=anchor aria-hidden=true href=#data>#</a></h2>
+<ul>
+<li>Filebrowser</li>
+<li>Syncthing</li>
+<li>Jellyfin</li>
+<li>Photoprism</li>
+<li>Gitea</li>
+</ul>
+<h2 id=other>Other<a hidden class=anchor aria-hidden=true href=#other>#</a></h2>
+<ul>
+<li>Minecraft</li>
+</ul>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
