@@ -1,6 +1,6 @@
 ---
 title: "Home-server architecture - Docker"
-date: "2021-10-26"
+date: "2021-11-15"
 description: "A deep dive series into my home-server architecture."
 tags: ['docker', 'internet', 'home-server', 'self-hosted']
 showToc: false
