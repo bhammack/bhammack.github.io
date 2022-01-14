@@ -1,6 +1,6 @@
 ---
 title: "Home-server architecture - Services"
-date: "2021-10-25"
+date: "2021-10-27"
 description: "A deep dive series into my home-server architecture."
 tags: ['dns', 'internet', 'home-server', 'self-hosted']
 showToc: false
