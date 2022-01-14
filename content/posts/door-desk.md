@@ -24,6 +24,7 @@ Documenting a build of my door desk
 * Door desk original design: https://web.archive.org/web/20090407142905/http://blog.leftnode.com/blog/entry/2
   * 4x L-brackets
   * 4x Angle brackets
+    * https://www.homedepot.com/p/Simpson-Strong-Tie-CF-4-15-16-in-x-6-in-Concrete-Form-Angle-CF-R/100375334
   * 1x 4x4, cut into four 30" sections
   * 1x hollow-core door slab
   * Sheetrock 1.25" screws work fine
