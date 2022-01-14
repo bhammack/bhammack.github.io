@@ -12,8 +12,9 @@ cover:
 
 As described in the previous post, nearly all the software running on my home server is managed through docker containers. In this post, I'll deep dive some of the service I run, and integrations I've created between containers.
 
-
 ## Core services
+
+To advertise my home server to the world, I run a simple container that reports my IP to Cloudflare, and updates the wildcard A-record to the requestor's address. 
 
 The heart of the ability to self-host web applications is [Traefik](https://traefik.io/traefik/), a fantastic docker-first reverse proxy. Traefik is the secret sauce that allows me to expose multiple web apps - each under their own subdomain - despite only having one public IP from my internet service provider. By writing entry point rules for each service definition within `docker-compose.yml`, Traefik will route traffic to the appropriate container. In addition to reverse proxying, Traefik also handles generation of Let's Encrypt certificates for all subdomains (via wildcard cert), auto-upgrades clients from http to https, and facilitates plugins for other middleware. 
 
@@ -25,35 +26,38 @@ A common challenge that I experience with this configuration however is that man
 
 ## Administrative services
 
-Portainer
-Web ssh
-VScode
+* Portainer
+* Web ssh
+* VScode
+* Webtop
+* Novnc
+* Grafana
 
+## Utilities
 
+* PiHole
+* Jenkins
+* Node-RED
+* Gotify
+* Diun
+* Mailrise
 
-## Services
+## Home
 
+* Home Assistant
+* MPD
+* MQTT
+* Mongo
+* ESPHome
 
-### Minecraft
-I run a minecraft game server
+## Data
 
-### PiHole
-> network wide DNS black hole
+* Filebrowser
+* Syncthing
+* Jellyfin
+* Photoprism
+* Gitea
 
-### Node-RED
-> describe all the custom flows you've created
+## Other
 
-### Home Assistant
-> this is what got me into self hosting
-
-### Jenkins
-> various jobs and operations
-
-
-
-
-
-
-### Other services
-**Portainer** - a simple docker container management web application. 
-**Gotify** - a self-hosted push notification platform that provides a variety of integration points for other services.
+* Minecraft
