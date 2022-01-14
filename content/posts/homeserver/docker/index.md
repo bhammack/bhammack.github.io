@@ -12,6 +12,8 @@ cover:
 
 Nearly everything hosted on my home server is executed and managed as a collection of docker containers and configurations. This entire stack is versioned through a private git repository in order to version and encapsulate the composition, configuration, and integrations in one place. Within this repo lies one docker-compose.yml that describes all my services (though at this point, I am pursuing decomposing this file into multiple stacks as it's growing quite cumbersome to maintain).
 
+From the original Ubuntu 18 server installation, only a few modifications were made to the base operating system. I'll describe those changes later in this post.
+
 ## Can I see it?
 
 ```
@@ -29,7 +31,7 @@ Nearly everything hosted on my home server is executed and managed as a collecti
 * Gitea
 and more!
 
-## What have you changed on the host machine?
+## What was modified on the host machine?
 
 **DNS** The default DNS resolver for Ubuntu. Traditionally, Linux operating systems utilize `/etc/hosts` for local name resolution. However, Ubuntu thinks it knows what's best for you, and implemented their own resolver services. I disabled this service by:
 
@@ -39,3 +41,14 @@ sudo systemctl disable systemd-resolved
 # Then modify the resolv file to change the default nameserver address.
 sudo nano /etc/resolv.conf # change nameserver 127.0.0.53 to 127.0.0.1
 ```
+
+**fail2ban** fail2ban was installed at the operating system level in order to ban malicious actors who would seek to exploit a home server.
+
+**snap** `snap` was removed in favor of the traditional `apt` package manager.
+
+**cron** A cron-job was created on the host machine to report its status to healthchecks.io as a means of monitoring the base OS health.
+
+In retrospect, I should have installed Debian as the server's operating system as I do not use any of the "features" Canonical sneaks into Ubuntu.
+
+
+
