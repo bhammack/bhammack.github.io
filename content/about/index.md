@@ -10,13 +10,11 @@ Hey there!
 
 I'm a software engineer specializing in software integrations. I employ novel solutions and best practices in all the code-bases I touch, crafting code not only for the customer, but also for my fellow engineers.
 
-![github profile avatar](self.jpg)
-
-
 ## Experience
 
+**Systems Development Engineer** - Amazon Web Services
 
-
+**Software Engineer** - Lockheed Martin
 
 ## What are my tools of the trade?
 
@@ -28,7 +26,6 @@ I am a full stack web developer with intricate experience in software integratio
 * **Docker**: Containerization of existing applications and design around the 12-factor application model.
 
 I am familiar with designing and operating both relational (MySQL, sqlite3) and non-relational (mongodb, embedded datastores) databases.
-
 
 ## Formal Education
 
