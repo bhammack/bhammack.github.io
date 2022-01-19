@@ -48,6 +48,8 @@ sudo nano /etc/resolv.conf # change nameserver 127.0.0.53 to 127.0.0.1
 
 **cron** A cron-job was created on the host machine to report its status to healthchecks.io as a means of monitoring the base OS health.
 
+**disable sleep** `sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target` https://unix.stackexchange.com/a/329081
+
 In retrospect, I should have installed Debian as the server's operating system as I do not use any of the "features" Canonical sneaks into Ubuntu.
 
 
