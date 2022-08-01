@@ -6,8 +6,8 @@ tags: ['dns', 'internet', 'home-server', 'self-hosted']
 showToc: false
 TocOpen: false
 draft: false
-cover:
-    image: https://www.techdonut.co.uk/sites/default/files/production/image/network-servers-4006808741.jpg
+# cover:
+#     image: https://www.techdonut.co.uk/sites/default/files/production/image/network-servers-4006808741.jpg
     # can also paste direct link from external site
     # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
     # alt: "<alt text>"

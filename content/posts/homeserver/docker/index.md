@@ -6,8 +6,8 @@ tags: ['docker', 'internet', 'home-server', 'self-hosted']
 showToc: false
 TocOpen: false
 draft: false
-cover:
-    image: https://cbsnews1.cbsistatic.com/hub/i/r/2012/01/10/0059c57b-a644-11e2-a3f0-029118418759/thumbnail/1200x630/10dc70252db7abf30fc6abb042364c95/NZ_136581961.jpg
+# cover:
+#     image: https://cbsnews1.cbsistatic.com/hub/i/r/2012/01/10/0059c57b-a644-11e2-a3f0-029118418759/thumbnail/1200x630/10dc70252db7abf30fc6abb042364c95/NZ_136581961.jpg
 ---
 
 Nearly everything hosted on my home server is executed and managed as a collection of docker containers and configurations. This entire stack is versioned through a private git repository in order to version and encapsulate the composition, configuration, and integrations in one place. Within this repo lies one docker-compose.yml that describes all my services (though at this point, I am pursuing decomposing this file into multiple stacks as it's growing quite cumbersome to maintain).

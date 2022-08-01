@@ -6,8 +6,8 @@ tags: ['amazfit']
 showToc: false
 TocOpen: false
 draft: false
-cover:
-    image: https://site-cdn.huami.com/files/amazfit/en/gts/section-4.jpg
+# cover:
+#     image: https://site-cdn.huami.com/files/amazfit/en/gts/section-4.jpg
     # can also paste direct link from external site
     # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
     # alt: "<alt text>"

@@ -6,8 +6,8 @@ tags: ['dns', 'internet', 'home-server', 'self-hosted']
 showToc: false
 TocOpen: false
 draft: false
-cover:
-    image: https://www.europarl.europa.eu/resources/library/images/20200928PHT88015/20200928PHT88015_original.jpg
+# cover:
+#     image: https://www.europarl.europa.eu/resources/library/images/20200928PHT88015/20200928PHT88015_original.jpg
 ---
 
 As described in the previous post, nearly all the software running on my home server is managed through docker containers. In this post, I'll deep dive some of the service I run, and integrations I've created between containers.

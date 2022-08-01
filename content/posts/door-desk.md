@@ -6,8 +6,8 @@ tags: ['desk', 'door', 'build']
 showToc: false
 TocOpen: false
 draft: false
-cover:
-    image: https://i.imgur.com/FkDZC0B.png
+# cover:
+#     image: https://i.imgur.com/FkDZC0B.png
 ---
 
 Documenting a build of my door desk
