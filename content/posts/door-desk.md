@@ -5,7 +5,7 @@ description: "Design and construction of a cheap hollow-core door desk."
 tags: ['desk', 'door', 'build']
 showToc: false
 TocOpen: false
-draft: false
+draft: true
 # cover:
 #     image: https://i.imgur.com/FkDZC0B.png
 ---

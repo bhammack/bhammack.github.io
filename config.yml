@@ -26,8 +26,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Ben Hammack
-  description: "Ben's Personal Blog"
+  title: B3
+  description: "Ben's Builder Blog"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   images: ["https://avatars.githubusercontent.com/u/8301606"]
@@ -66,7 +66,7 @@ params:
   # profile-mode
   # You can add this line to Content to show an image: ![me](https://avatars.githubusercontent.com/u/8301606?s=100)
   homeInfoParams:
-    Title: Ben's personal blog
+    Title: Ben's builder blog
     Content: >
       Hello! Welcome to my personal website - I post about the things I've created,
       hacks, and other side projects. Hope you find something of interest!
@@ -107,6 +107,10 @@ params:
 
 menu:
   main:
+    # - identifier: Home
+    #   name: Home
+    #   url: /
+    #   weight: 1
     - identifier: archives
       name: Archives
       url: /archives/
