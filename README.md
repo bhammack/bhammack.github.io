@@ -1,3 +1,7 @@
+# README
+
+I have disabled publishing of this repo as a github pages site. Make sure to re-activate if you ever use this again.
+
 **List of personal blogs**: https://refined.blog/
 
 **Example blogs from HN**
